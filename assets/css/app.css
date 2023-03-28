@@ -35,6 +35,15 @@
   background-color: #564632;
 }
 
+.bg-beige-500 {
+  background-color: rgba(192, 186, 139, 0.81);
+}
+
+.hover\:bg-beige-700:hover {
+  background-color: rgba(247, 238, 166, 0.81);
+}
+
+
 .hover\:bg-brown-700:hover {
   background-color: #3E3224;
 }

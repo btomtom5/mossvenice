@@ -26,57 +26,65 @@
             <h1 class="text-4xl">in the heart of venice</h1>
           </div>
         </div>
-        <div class="w-full" style="height: 22.3%">
-          <div class="text-white tracking-tighter flex flex-wrap">
+        <div class="w-full relative" style="height: 22.3%">
+          <div class="text-white tracking-tighter flex flex-wrap h-full">
             <%# right container %>
-            <div class="w-full px-10 md:px-20 py-12 lg:w-1/2 order-2 lg:order-2 flex flex-col justify-around" style="min-height: 400px;">
+            <div class="w-full px-10 md:px-20 py-12 lg:w-1/2 order-2 lg:order-2 flex flex-col justify-start" style="min-height: 400px;">
               <%# content begins %>
               <div>
-                <h1 class="text-3xl">YOU ARE INVITED ⋆</h1>
+                <h1 class="text-4xl">YOU ARE INVITED ⋆</h1>
               </div>
               <div>
-                <h1 class="text-3xl">
+                <h1 class="text-4xl mt-3 drop-shadow-title">
                   co-working by day | event space by night
                 </h1>
               </div>
               <div>
-                <p class="text-2xl">
+                <p class="text-3xl mt-16 leading-normal">
                   MOSS is a place for leaders, technologists, creators, artists, writers, and healers to explore, create, and grow together.
                 </p>
               </div>
             </div>
             <%# left container %>
-            <div class="w-full px-10 md:px-20 py-12 lg:w-1/2 order-1 lg:order-1 flex flex-col justify-around" style="min-height: 400px;">
+            <div class="w-full px-10 md:px-5 py-12 lg:w-1/2 order-1 lg:order-1 flex flex-col justify-between" style="min-height: 400px;">
               <%# content begins %>
               <div>
-                <h1 class="text-3xl">OUR SPACE</h1>
+                <h1 class="text-4xl">OUR SPACE</h1>
               </div>
               <div>
-                <p class="text-2xl">Bio-architecture</p>
-                <p class="text-lg">live + work in communion with nature</p>
+                <p class="text-3xl">Bio-architecture</p>
+                <p class="text-xl">live + work in communion with nature</p>
               </div>
               <div>
-                <p class="text-2xl">Wabi Sabi</p>
-                <p class="text-lg">find beauty in the perfectly imperfect</p>
+                <p class="text-3xl">Wabi Sabi</p>
+                <p class="text-xl">find beauty in the perfectly imperfect</p>
               </div>
               <div>
-                <p class="text-2xl">Minimalism</p>
-                <p class="text-lg">clarity of mind + peace</p>
+                <p class="text-3xl">Minimalism</p>
+                <p class="text-xl">clarity of mind + peace</p>
               </div>
             </div>
+          </div>
+          <div class="mt-16 absolute w-full flex flex-row justify-center" style="bottom: 30px;">
+            <a href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY" class="drop-shadow-title">
+              <button class="bg-beige-500 hover:bg-beige-700 text-white py-5 px-8 rounded-3.5xl tracking-tight"> 
+                <p class="drop-shadow-title text-2xl">Become a Founding Member</p>
+              </button>
+            </a>
+            
           </div>
         </div>
         <div class="w-full" style="height: 28.9%"></div>
         <div class="w-full flex flex-col justify-center px-20" style="height: 24%">
           <%# content 3 %>
           <div class="text-white tracking-tighter flex flex-wrap" style="background-color: rgb(123, 80, 55, 0.65);">
-            <div class="w-full px-10 md:px-20 md:py-12 py-16 lg:w-1/2 order-2 lg:order-2 flex flex-col justify-around" style="min-height: 400px;">
+            <div class="w-full px-10 md:px-24 md:py-12 py-16 lg:w-1/2 order-2 lg:order-2 flex flex-col justify-around" style="min-height: 400px;">
               <%# content begins %>
               <div>
                 <h1 class="text-4xl leading-normal drop-shadow-title">MOSS OFFERINGS</h1>
               </div>
               <div>
-                <ul class="list-none leading-normal  text-3xl drop-shadow-title">
+                <ul class="list-none leading-normal text-3xl drop-shadow-title">
                   <li>cozy lofts</li>
                   <li>bicycle storage</li>
                   <li>tea + coffee bar</li>
@@ -89,7 +97,7 @@
             <div class="w-full px-10 md:px-10 md:py-12 py-16 lg:w-1/2 order-1 lg:order-1 flex flex-col justify-around" style="min-height: 400px;">
               <%# content begins %>
               <div>
-                <h1 class="text-4xl leading-normal  drop-shadow-title">MOSS WELLNESS OPTIONS</h1>
+                <h1 class="text-4xl leading-normal drop-shadow-title">MOSS WELLNESS OPTIONS</h1>
               </div>
               <div>
                 <ul class="list-none leading-normal text-3xl drop-shadow-title">
@@ -110,7 +118,7 @@
 
 
     
-    <div class="p-12 text-center text-offwhite text-xl" style="background-color: #AAA58C;">
+    <div class="p-12 text-center text-offwhite text-2xl" style="background-color: #AAA58C;">
       <p>
         Without value-aligned spaces to regularly gather, individuals are left to create community by themselves.
       </p>
@@ -177,13 +185,45 @@
       <div class="absolute inset-0 bg-cover bg-center">
         <%# Founding membership info %>
         <div class="flex-grow w-full" style="height: 49.5%">
-
+          <%# text info %>
+          <div class="md:px-20 px-10 flex flex-row justify-between pt-28">
+            <h1 class="text-3xl">FOUNDING MEMBERSHIP</h1>
+            <div class="text-2xl leading-relaxed" >
+              <p>We are inviting YOU to root the culture at MOSS.</p>
+              <p>As a founding member, you will receive exclusive benefits</p>
+              <p class="text-sm mt-1">we kindly ask you do not share this link with others ⋆</p>
+            </div>
+          </div>
+          <%# picture + benefits %>
+          <div class="md:px-20 px-10 flex flex-row justify-between mt-12">
+            <div class="height: 420px; width: 420px;">
+              <img class="object-contain w-full h-full" src="/images/new_landing/map.png">
+            </div>
+            <ul class="list-disc px-10 text-2xl leading-relaxed pt-2">
+              <li>$3500</li>
+              <li>2 months free</li>
+              <li>private rooms</li>
+              <li>full wellness access</li>
+              <li>1 year of membership</li>
+              <li>MOSS opening launch</li>
+              <li>unlimited event access</li>
+              <li>10 day access per month</li>
+              <li>unlimited +1 guest passes</li>
+            </ul>
+          </div>
         </div>
         <%# FAQ %>
         <div class="flex-grow w-full" style="height: 51.5%;">
           <%# FAQ %>
-          <div class="container mx-auto md:px-20 px-12 text-lg">
-            <h1 class="text-3xl mb-4 drop-shadow-title" style="font-weight: 600;">FAQ</h1>
+          <div class="flex-row justify-center w-full flex">
+            <button class="mt-6 bg-brown-500 text-white text-base py-5 px-16 rounded-3xl drop-shadow-title" style="letter-spacing: 0.05em;">
+              <a href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY">
+                <p class="text-lg tracking-wider">RESERVE YOUR SPOT</p>
+              </a>
+            </button>
+          </div>
+          <div class="container mx-auto md:px-20 px-12 text-lg mt-16">
+            <h1 class="text-4xl mb-4 drop-shadow-title" style="font-weight: 600;">FAQ</h1>
             <div class="accordion">
               <div class="accordion-item">
                 <div class="accordion-title text-2xl">
