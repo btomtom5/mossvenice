@@ -4,39 +4,53 @@
   <div class="mx-auto bg-black text-offwhite" style="max-width: 1447px;">
     <div class="relative bg-tan inline-block">
       <%# Sizing Guide %>
-      <img src="/images/new_landing/hero_compressed.webp" alt="Background image" class="w-full h-auto opacity-0">
-      <div class="relative inline-block w-full" style="padding-bottom: 46.8%">
-        <img src="/images/new_landing/Dandelion.webp" alt="Background image" class="w-full absolute h-full opacity-0">
+      <picture>
+        <source srcset="/images/new_landing/hero_compressed.webp" media="(min-width: 1090px)"/>
+        <img class="w-full h-auto opacity-0" src="/images/mobile/hero.webp">
+      </picture>
+      <div class="relative inline-block w-full h-auto" style="padding-bottom: 46.8%">
+        <picture>
+          <source srcset="/images/new_landing/Dandelion.webp" media="(min-width: 1090px)"/>
+          <img class="w-full absolute h-full opacity-0" src="/images/mobile/dandelion.png">
+        </picture>
       </div>
       <%# end %>
       <%# background image %>
       <div class="absolute inset-0 bg-cover bg-center">
-        <img src="/images/new_landing/hero_compressed.webp">
+        <picture>
+          <source srcset="/images/new_landing/hero_compressed.webp" media="(min-width: 1090px)"/>
+          <img class="w-full h-auto" src="/images/mobile/hero.webp">
+        </picture>
       </div>
-      <div class="absolute inset-0 flex items-start justify-center" style="padding-top: 93%;">
-        <img src="/images/new_landing/Dandelion.webp" alt="Dandelion image" class="w-full h-auto opacity-70">
+      <div class="absolute inset-0 w-full h-auto bg-cover bg-center" style="padding-top: 93%;">
+        <picture>
+          <source srcset="/images/new_landing/Dandelion.webp" media="(min-width: 1090px)"/>
+          <img class="w-full h-auto opacity-70" src="/images/mobile/dandelion.png">
+        </picture>
       </div>
 
       <%# content %>
       <div class="absolute inset-0 bg-cover bg-center">
         <div class="w-full" style="height: 24.8%">
           <div class="absolute text-center top-36 left-1/2 transform -translate-x-1/2">
-            <h1 class="text-9xl" style="letter-spacing: 0.2em;">MOSS</h1>
+            <h1 class="lg:text-9xl text-8xl" style="letter-spacing: 0.2em;">MOSS</h1>
             <p class="text-xl pb-10">co-working + events</p>
-            <h1 class="text-4xl">in the heart of venice</h1>
+            <h1 class="lg:text-4xl text-2xl">in the heart of venice</h1>
           </div>
         </div>
         <div class="w-full relative" style="height: 22.3%">
           <div class="text-white tracking-tighter flex flex-wrap h-full">
             <%# right container %>
-            <div class="w-full px-10 md:px-20 py-12 lg:w-1/2 order-2 lg:order-2 flex flex-col justify-start" style="min-height: 400px;">
+            <div class="w-full px-10 md:px-20 xl:mt-0 lg:-mt-14 py-0 xl:py-12 md:w-1/2 order-1 lg:order-2 flex flex-col justify-start" style="min-height: 400px;">
               <%# content begins %>
               <div>
-                <h1 class="text-4xl">YOU ARE INVITED ⋆</h1>
+                <h1 class="text-3xl lg:text-4xl">YOU ARE INVITED ⋆</h1>
               </div>
               <div>
-                <h1 class="text-4xl mt-3 drop-shadow-title">
-                  co-working by day | event space by night
+                <h1 class="text-3xl lg:text-4xl mt-3 drop-shadow-title">
+                  <span>co-working by day</span>
+                  <span class="xl:inline lg:hidden md:inline">|</span>
+                  <span class="whitespace-nowrap">event space by night</span>
                 </h1>
               </div>
               <div>
@@ -46,7 +60,7 @@
               </div>
             </div>
             <%# left container %>
-            <div class="w-full px-10 md:px-5 py-12 lg:w-1/2 order-1 lg:order-1 flex flex-col justify-between" style="min-height: 400px;">
+            <div class="w-full px-10 md:px-5 py-12 lg:w-1/2 order-2 lg:order-1 flex flex-col justify-between" style="min-height: 400px;">
               <%# content begins %>
               <div>
                 <h1 class="text-4xl">OUR SPACE</h1>
@@ -129,8 +143,11 @@
 
 
     <%# EVENTS SECTION %>
-    <div class="text-white bg-tan relative inline-block w-full h-full flex flex-wrap font-size-0">
-      <img src="/images/new_landing/member_background.webp" alt="member image of lights" class="block w-full h-auto font-size-1rem">
+    <div class="text-white bg-tan relative inline-block w-screen lg:w-full h-full flex flex-wrap font-size-0">
+      <picture>
+        <source srcset="/images/new_landing/member_background.webp" media="(min-width: 1090px)"/>
+        <img src="/images/new_landing/member_background.webp" alt="member image of lights" class="block w-full h-full object-cover font-size-1rem">
+      </picture>
 
       <div class="w-full absolute px-10 md:px-20 pt-20">
         <h1 class="drop-shadow-title" style="font-size: 2.5rem; line-height: 150%;">MOSS + MEMBER LED EVENTS</h1>
@@ -151,7 +168,7 @@
             <li>late night tea + conversation</li>
           </ul>
           <ul class="category-list learn list-inside list-disc hidden" style="padding-left: 0.25rem;">
-            <li>creator jams</li>
+            <li>creator circles</li>
             <li>group focus flow</li>
             <li>bookclubs + discussion</li>
             <li>speaker series + workshops</li>
@@ -166,7 +183,7 @@
             <li>dance classes</li>
             <li>group hikes + travel</li>
             <li>sauna + ice bath cycles</li>
-            <li>breath-work + meditation</li>
+            <li>breathwork + meditation</li>
           </ul>
         </div>
       </div>
@@ -184,9 +201,9 @@
       <%# content %>
       <div class="absolute inset-0 bg-cover bg-center">
         <%# Founding membership info %>
-        <div class="flex-grow w-full" style="height: 49.5%">
+        <div class="w-full flex-grow flex flex-col" style="height: 49.5%">
           <%# text info %>
-          <div class="md:px-20 px-10 flex flex-row justify-between pt-28">
+          <div class="md:px-20 px-10 flex flex-row justify-between xl:pt-28 lg:pt-14 pt-8">
             <h1 class="text-3xl">FOUNDING MEMBERSHIP</h1>
             <div class="text-2xl leading-relaxed" >
               <p>We are inviting YOU to root the culture at MOSS.</p>
@@ -196,8 +213,8 @@
           </div>
           <%# picture + benefits %>
           <div class="md:px-20 px-10 flex flex-row justify-between mt-12">
-            <div class="height: 420px; width: 420px;">
-              <img class="object-contain w-full h-full" src="/images/new_landing/map.png">
+            <div style="height: 400; width: 400px;">
+              <img class="object-cover max-w-full max-h-full" src="/images/new_landing/map.png">
             </div>
             <ul class="list-disc px-10 text-2xl leading-relaxed pt-2">
               <li>$3500</li>
@@ -207,13 +224,16 @@
               <li>1 year of membership</li>
               <li>MOSS opening launch</li>
               <li>unlimited event access</li>
+              <li>unlimited guest passes</li>
               <li>10 day access per month</li>
-              <li>unlimited +1 guest passes</li>
             </ul>
+          </div>
+          <div class="flex-row justify-center flex py-12" style="margin-top: auto;">
+            <h1 class="text-4xl drop-shadow-title">🚀Soft Launch is JUNE 1st🚀</h1>  
           </div>
         </div>
         <%# FAQ %>
-        <div class="flex-grow w-full" style="height: 51.5%;">
+        <div class="flex-grow w-full" style="height: 50.5%;">
           <%# FAQ %>
           <div class="flex-row justify-center w-full flex">
             <button class="mt-6 bg-brown-500 text-white text-base py-5 px-16 rounded-3xl drop-shadow-title" style="letter-spacing: 0.05em;">
